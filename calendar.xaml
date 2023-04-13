@@ -1,0 +1,19 @@
+﻿<UserControl x:Class="GenshinCalendar.calendar"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:GenshinCalendar"
+             mc:Ignorable="d" 
+             d:DesignHeight="100" d:DesignWidth="400">
+    <Grid Background="#FFDEB4">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.5*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+        <RadioButton x:Name="btn" />
+        <Image x:Name="img" Source="/image/Albedo 3.png" Grid.Column="1"/>
+        <TextBlock x:Name="nm" Grid.Column="2" FontFamily="Genshin Impact" FontSize="20" VerticalAlignment="Center" Margin="20" Text="Имя персонажа"/>
+    </Grid>
+</UserControl>
